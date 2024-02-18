@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+        .card {
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .card-text {
+            display: none;
+        }
+
+        .card.active .card-text {
+            display: block;
+        }
+		a#vis {
+  color: white;
+}
+
+a#vis:hover {
+  color: powderblue;
+}
+.scrolled {
+  background-color: rgba(37, 125, 199, 1) !important;
+}
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background:rgba(0,0,0,0);">
+<div class="container">
+<a href="#" class="navbar-brand"><img src="lg.png">TRAVEL VISTA</a>
+<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarid">
+<ul class="navbar-nav text-center ml-auto">
+<li class="nav-items">
+<a href="index.html" class="nav-link" id="vis">Home</a>
+</li>
+<li class="nav-items">
+<a href="about.html" class="nav-link" id="vis">About Us</a>
+</li>
+<li class="nav-items">
+<a href="servecies.html" class="nav-link" id="vis">Services</a>
+</li>
+
+
+<li class="nav-items">
+<a href="login.php" class="nav-link" id="vis">login</a>
+</li>
+<li class="nav-items">
+<a href="signup.php" class="nav-link" id="vis">signup</a>
+</li>
+<li class="nav-items">
+<a href="contact.php" class="nav-link" id="vis">Mail Us</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="jumbotron" style="background-image: url('simage/tr1.jpg');height:400px;">
+<h1 style="text-align:center; margin-top:70px;">Services</h1>
+</div>
+    <div class="container" style="margin-bottom:100px;">
+        <br>
+        <center>
+            <h1>4 Reasons to Choose us</h1><br>
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="card" data-toggle="collapse" data-target="#carInfo" style="background-color:#257DC7;">
+                        <div><img src="https://img.icons8.com/fluency/48/car.png" alt="car" /></div>
+                        <h4 class="card-title text-center"style="color:white;">Transportation</h4>
+                       
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" data-toggle="collapse" data-target="#hotelInfo" style="background-color:#257DC7;">
+                        <div><img src="simage/hot.png"></div>
+                        <h4 class="card-title text-center"style="color:white;">Hotel Reservation</h4>
+                      
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" data-toggle="collapse" data-target="#vacationInfo" style="background-color:#257DC7;">
+                        <div><img src="https://img.icons8.com/color/48/post-office.png" alt="post-office" /></div>
+                        <h4 class="card-title text-center"style="color:white;">Vacation Packages</h4>
+                       
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" data-toggle="collapse" data-target="#guideInfo"style="background-color:#257DC7;">
+                        <div><img src="https://img.icons8.com/color/48/east-direction.png" alt="east-direction" /></div>
+                        <h4 class="card-title text-center"style="color:white;">Guide</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="carInfo">
+                <div class="card card-body" style="background-color:#257DC7;">
+				            <div class="row">
+                <div class="col-xl-4">
+                    <div class="card" data-toggle="collapse" data-target="#economyCarInfo">
+                        <div><img src="simage/sw1.jpeg" alt="sw1" /></div>
+                        <h4 class="card-title text-center" >Swift car</h4>
+                    </div>
+					 <div class="collapse" id="economyCarInfo">
+                <div class="card card-body"style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">Swift Details:</h4>
+                    <ul  style="color:white;">
+                        <li>Car Name: SWIFT</li>
+                        <li>Seating Capacity: 4 passengers</li>
+                        <li>Cost per Kilometer: 6.58rs</li>
+                        <li>Distance to Amer Fort: 10 km</li>
+                        <li>Distance to City Palace: 5 km</li>
+                        <li>Distance to Hawa Mahal: 3 km</li>
+                        <li>Total Travel Cost to Amer Fort: 65.81rs (10 km * 6.58rs per km)</li>
+                        <li>Total Travel Cost to City Palace: 32.90rs (5 km * 6.58 per km)</li>
+                        <li>Total Travel Cost to Hawa Mahal: 19.74rs (3 km * 6.58 per km)</li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="card" data-toggle="collapse" data-target="#standardCarInfo">
+                        <div><img src="simage/sw3.jpeg" alt="sw3" /></div>
+                        <h4 class="card-title text-center">Vauxhall insignia</h4>
+                    </div>
+					 <div class="collapse" id="standardCarInfo">
+                <div class="card card-body"style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">Vauxhall insignia Details:</h4>
+                    <ul style="color:white;">
+                        <li>Car Name: Vauxhall insignia</li>
+                        <li>Seating Capacity: 4 passengers</li>
+                        <li>Cost per Kilometer: 9.87rs</li>
+                        <li>Distance to Amer Fort: 10 km</li>
+                        <li>Distance to City Palace: 5 km</li>
+                        <li>Distance to Hawa Mahal: 3 km</li>
+                        <li>Total Travel Cost to Amer Fort: 98.71rs (10 km * 9.87rs per km)</li>
+                        <li>Total Travel Cost to City Palace: 49.36rs (5 km * 9.87rs per km)</li>
+                        <li>Total Travel Cost to Hawa Mahal: 29.61rs (3 km * 9.87rs per km)</li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="card" data-toggle="collapse" data-target="#suvInfo">
+                        <div><img src="simage/sw4.jpeg" alt="Sw4" /></div>
+                        <h4 class="card-title text-center">SUV</h4>
+                      
+                    </div>
+					<div class="collapse" id="suvInfo">
+                <div class="card card-body"style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">SUV Details:</h4>
+                    <ul style="color:white;">
+                        <li>Car Name: SUV</li>
+                        <li>Seating Capacity: 6 passengers</li>
+                        <li>Cost per Kilometer: 12.34rs</li>
+                        <li>Distance to Amer Fort: 10 km</li>
+                        <li>Distance to City Palace: 5 km</li>
+                        <li>Distance to Hawa Mahal: 3 km</li>
+                        <li>Total Travel Cost to Amer Fort: 123rs (10 km * 12.34rs per km)</li>
+                        <li>Total Travel Cost to City Palace: 61.69rs (5 km * 12.34rs per km)</li>
+                        <li>Total Travel Cost to Hawa Mahal: 37.02rs (3 km * 12.34rs per km)</li>
+                    </ul>
+                </div>
+            </div>
+                </div>
+            </div>
+                   
+                </div>
+            </div>
+			<div class="collapse" id="hotelInfo">
+                <div class="card card-body" style="background-color:#257DC7; border:none;">
+				            <div class="row">
+			<div class="col-xl-4">
+			
+                    <div class="collapse" id="hotelInfo" >
+                <div class="card card-body" style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">Hotel Bronze</h4>
+                    <ul style="color:white;">
+                        <li>Hotel Name: Hotel Milestone</li>
+                        <li>Location: Bani Park Jaipur</li>
+                        <li>Cost per Night: 4108rs</li>
+                        <li>Number of Nights: 3</li>
+                        <li>Total Cost: 12316rs (3 nights * 4108rs per night)</li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+			<div class="col-xl-4">
+                    <div class="collapse" id="hotelInfo">
+                <div class="card card-body" style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">Hotel Silver</h4>
+                    <ul style="color:white;">
+                        <li>Hotel Name: jaipur Marriott Hotel</li>
+                        <li>Location: Jaipur</li>
+						<li>Provide: Hot Tub</li>
+                        <li>Cost per Night: 9000rs </li>
+                        <li>Number of Nights: 3</li>
+                        <li>Total Cost: 27000rs (3 nights * 9000rs per night)</li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+			<div class="col-xl-4">
+                    <div class="collapse" id="hotelInfo">
+                <div class="card card-body" style="background-color:#257DC7; border:none;">
+                    <h4 style="color:white;">Hotel Golden</h4>
+                    <ul style="color:white;">
+                        <li>Hotel Name: Hilton Hotel</li>
+                        <li>Location: Jaipur</li>
+						<li>Provide: pool</li>
+                        <li>Cost per Night: 9900rs </li>
+                        <li>Number of Nights: 3</li>
+                        <li>Total Cost: 29700rs (3 nights * 9900rs per night)</li>
+                    </ul>
+                </div>
+            </div>
+			</div>
+			</div>
+			</div>
+			
+			</div>
+			 <div class="collapse" id="vacationInfo">
+                <div class="card card-body" style="background-color:#257DC7;">
+                    <h4 style="color:white;">Vacation Packages</h4>
+                    <ul style="color:white;">
+                        <li>
+                            <h5>Package 1: Jaipur Explorer (3 Days)</h5>
+                            <ul>
+                                <li>Hotel Included: Hilton Hotel</li>
+                                <li>Sightseeing Places: Amer Fort, City Palace, Hawa Mahal</li>
+                                <li>Guide Service: Yes</li>
+                                <li>Total Cost: 50,000rs</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Package 2: Jaipur Heritage Trail (5 Days)</h5>
+                            <ul>
+                                <li>Hotel Included: jaipur Marriott Hotel</li>
+                                <li>Sightseeing Places: Amer Fort, City Palace, Hawa Mahal, Jantar Mantar, Nahargarh Fort</li>
+                                <li>Guide Service: Yes</li>
+                                <li>Total Cost: 80,000rs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<div class="collapse" id="guideInfo">
+ <div class="card card-body" style="background-color:#257DC7;">
+<h4  style="color:white;">Guide Services</h4>
+
+<h5  style="color:white;">Testimonials</h5>
+ <div class="row">
+ <div class="col-xl-6">
+ <div class="card">
+<div class="card-body" style="background-color:#257DC7;">
+<div style="color:white;"><img src="simage/in1.jpg" style="border-radius:30px;"> Ram</div>
+<p style="color:white;">"Ram was an excellent guide! His knowledge of Jaipur's history and culture was
+ impressive. He made our trip memorable and enjoyable. Highly recommended!"</p>
+ <p class="text-right" style="color:white;">rajiv kumar</p>
+ </div>
+</div>
+</div>
+ <div class="col-xl-6">
+ <div class="card">
+<div class="card-body" style="background-color:#257DC7; border:none;">
+<div  style="color:white;"><img src="simage/al2.jpg" style="border-radius:30px;"> james</div>
+<p style="color:white;">"james was an excellent guide! His knowledge of Jaipur's history and culture was
+ impressive. He made our trip memorable and enjoyable. Highly recommended!"</p>
+ <p class="text-right" style="color:white;">rajiv kumar</p>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</center>
+</div>
+<div class="container"><br>
+<h1 class="text-center" style="color:#257DC7;">Our Gallery</h1><br><br>
+<div class="row">
+<div class="col-xl-6">
+<div class="row">
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a1.jpg" class="img-fluid img-rounded">
+</div>
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a2.jpg" class="img-fluid img-rounded">
+</div>
+</div>
+<div class="row">
+<div class="col-xl-6" style="margin-top:20px;">
+<img style="border-radius:30px;"src="simage/a4.jpg" class="img-fluid img-rounded">
+</div>
+<div class="col-xl-6" style="margin-top:20px;">
+<img style="border-radius:30px;"src="simage/a5.jpg" class="img-fluid img-rounded">
+</div>
+</div>
+</div>
+
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a3.jpg" class="img-fluid img-rounded">
+</div>
+
+</div><br>
+<div class="row">
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a6.jpg" class="img-fluid img-rounded">
+</div>
+<div class="col-xl-6">
+<div class="row">
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a7.jpg" class="img-fluid img-rounded">
+</div>
+<div class="col-xl-6">
+<img style="border-radius:30px;"src="simage/a8.jpg" class="img-fluid img-rounded">
+</div>
+</div>
+<div class="row">
+<div class="col-xl-6" style="margin-top:20px;">
+<img style="border-radius:30px;"src="simage/a11.jpg" class="img-fluid img-rounded">
+</div>
+<div class="col-xl-6" style="margin-top:20px;">
+<img style="border-radius:30px;"src="simage/a10.jpg" class="img-fluid img-rounded">
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+ <footer class="footer" style="background-color:#257DC7; margin-top:40px">
+<div class="container" style="padding-top:40px;">
+<center>
+<div class="row">
+<div class="col-xl-3">
+<div style="width:250px height:350px">
+<img width="200px" height="200px" src="logo.png">
+</div>
+</div>
+<div class="col-xl-2">
+<div style="width:250px height:350px">
+<h4 style="color:white; text-align:left;">Get Started</h4>
+<ul style="list-style-type:none; text-align:left;">
+<li><a style="color:white; text-decoration:none; hover=color:black;" href="navcol.html">Home</a></li>
+<li><a style="color:white; text-decoration:none;" href="formdiv.html">Sing Up</a></li>
+<li><a style="color:white; text-decoration:none;" href="#download">Download</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xl-2">
+<div style="width:250px height:350px">
+<h4 style="color:white; text-align:left;">About Us</h4>
+<ul style="list-style-type:none; text-align:left;">
+<li><a style="color:white; text-decoration:none;"href="#company information">Company Information</a></li>
+<li><a style="color:white; text-decoration:none;"href="contact.html">Contact Us</a></li>
+<li><a style="color:white; text-decoration:none;"href="#reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xl-2">
+<div style="width:250px height:350px">
+<h4 style="color:white; text-align:left;">Support </h4>
+<ul style="list-style-type:none; text-align:left;">
+<li><a style="color:white; text-decoration:none;"href="#home">FAQ</a></li>
+<li><a style="color:white; text-decoration:none;"href="#sinup">Help Desk</a></li>
+<li><a style="color:white; text-decoration:none;"href="#download">Fourms</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xl-3">
+<div style="width:250px height:350px">
+<a href="#"><img width="30px" height="30px" src="twi.png"></a>
+<a href="#"><img width="30px" height="30px" src="fc.png"></a>
+<a href="#"><img width="30px" height="30px" src="gp.png"></a><br><br>
+<a href="contact.html" button style="border:none; background:white; border-radius:18px; padding:10px; margin-left:px;">Contact Us</button></a>
+</div>
+</div>
+</div>
+<div class="col-12">
+<small style="color:white;"><img width="20px" height="20px" src="co.png">2023 copyrights All right reserved by aniket sharma</small>
+</div>
+</center>
+</div>
+</footer>
+<!-- Your rest of the content here -->
+<script>
+$(document).ready(function() {
+  // Function to check if the navbar needs to be scrolled
+  function checkScroll() {
+    var scrollPos = $(document).scrollTop();
+
+    if (scrollPos > 50) {
+      // If the user has scrolled down more than 50 pixels, add the "scrolled" class to the navbar
+      $('.navbar').addClass('scrolled');
+    } else {
+      // If the user has scrolled back to the top, remove the "scrolled" class from the navbar
+      $('.navbar').removeClass('scrolled');
+    }
+  }
+
+  // Call the checkScroll function on page load
+  checkScroll();
+
+  // Call the checkScroll function every time the user scrolls
+  $(window).on('scroll', function() {
+    checkScroll();
+  });
+});
+</script>           
+			
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+ Server: localhost -  Database: travelvista
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Aug 05, 2023 at 06:09 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `travelvista`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactus`
+--
+
+CREATE TABLE IF NOT EXISTS `contactus` (
+  `fname` text,
+  `lname` text,
+  `msg` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contactus`
+--
+
+INSERT INTO `contactus` (`fname`, `lname`, `msg`) VALUES
+('sonu', 'verma', 'hi');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`email`, `password`) VALUES
+('vinu@gmail.com', ''),
+('vinu@gmail.com', ''),
+('suman@gmail.com', ''),
+('vinu@gmail.com', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `signup`
+--
+
+CREATE TABLE IF NOT EXISTS `signup` (
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `confirmpassword` varchar(255) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `signup`
+--
+
+INSERT INTO `signup` (`email`, `password`, `confirmpassword`) VALUES
+('vinu@gmail.com', '', '123');
+
